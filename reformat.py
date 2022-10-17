@@ -1,6 +1,5 @@
-input = open("tokens.txt").read().splitlines() #files
 output = open('tokens.txt','w')
-for combo in input: 
+for combo in open("tokens.txt").read().splitlines() : 
     split = combo.split(':')
     token = split[2] 
     print(f"{token}")
